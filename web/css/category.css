@@ -1,0 +1,60 @@
+/** 头部标题 */
+.header{
+  position: fixed;
+  margin-bottom: 2.6667vw;
+  height: 17.6vw;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+.header a{
+  position: absolute;
+  left: 2.6667vw;
+  top: 50%;
+  transform:translateY(-50%);
+  display:inline-block;
+  width: 26.6667vw;
+}
+.header span{
+  font-size: 6.9333vw;
+  color: #28abfc;
+  font-weight: 600;
+  line-height: 17.6vw;
+}
+
+/** 内容 */
+.content{
+  display: flex;
+  padding-top: 20.2667vw;
+  height: 200vw;
+}
+/** 内容 - 左 */
+.content .left{
+  width:26.6667vw;
+  height: 100%;
+}
+.content .left li{
+  width:26.6667vw;
+  height:14.9333vw;
+  text-align: center;
+  line-height: 14.9333vw;
+}
+.content .left li a{
+  color: #333;
+  font-size: 4.2667vw;
+}
+.content .left li.current{
+  background-color: #fff;
+  border-left: 1.0667vw solid #28abfc;
+}
+/** 内容 - 右 */
+.content .right{
+  flex: 1;
+  background-color: #fff;
+}
+iframe{
+  /** 高度自适应，解决布局乱的问题 */
+  width: 100%;
+  height: 100%;
+  /* background-color: pink; */
+}
