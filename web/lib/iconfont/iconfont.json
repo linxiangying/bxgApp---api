@@ -1,0 +1,37 @@
+{
+  "id": "3366682",
+  "name": "2022.4.28",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8288837",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e848",
+      "unicode_decimal": 59464
+    },
+    {
+      "icon_id": "10069735",
+      "name": "邮件",
+      "font_class": "youjian",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "617439",
+      "name": "分类_fill",
+      "font_class": "fenleifill",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "3768204",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}
