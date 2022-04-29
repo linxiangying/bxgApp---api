@@ -78,6 +78,8 @@
 /** 微课 */
 .sClass{
   background-color: #fff;
+  /* 底部不背工具栏挡住 */
+  padding-bottom: 18.1333vw;
 }
 
 .little-title{

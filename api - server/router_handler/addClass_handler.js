@@ -9,7 +9,7 @@ module.exports.addClass_handler = (req, res) => {
   if (!req.file || req.file.fieldname !== 'img') { return res.send({ status: 1, message: '图片是必选参数！' }) }
   //* 图片检验正确，增加数据行
   const sqlStr = 'INSERT INTO class SET ?'
-  const priceStr = req.body.price instanceof Number?'￥'+req.body.price:req.body.price
+  const priceStr = req.body.price ==='免费'?req.body.price:'￥'+req.body.price
   const data = {
     ...req.body,
     price:priceStr,

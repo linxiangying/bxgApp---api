@@ -80,9 +80,9 @@
         <span> 微 课 </span>
         <span class="dot"></span>
       </div>
-      <ul>
+      <ul id="ul">
         <!-- 一个 li -->
-        <li>
+       <!--  <li>
           <a href="#">
             <img src="./images/java.png" alt="">
           </a>
@@ -178,7 +178,7 @@
             <span class="learn">20人学习</span>
             <span class="price">￥199</span>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
@@ -194,5 +194,29 @@
       <span>分类</span>
     </a>
   </div>
+  <!--* 1、先导 jQuery -->
+  <script src="./lib/jquery-3.6.0.min.js"></script>
+  <!--* 2、再导 template -->
+  <script src="./lib/template-web.js"></script>
+  <!--* 3、再导模板引擎 -->
+  <script type="text/html" id="tplLi">
+    {{each data}}
+      <!-- 一个 li -->
+      <li>
+        <a href="#">
+          <img src="{{$value.img}}" alt="">
+        </a>
+        <div class="msg">
+          {{$value.name}}
+        </div>
+        <div class="msgDown">
+          <span class="learn">{{$value.count}}人学习</span>
+          <span class="price">{{$value.price}}</span>
+        </div>
+      </li>
+    {{/each}}
+  </script>
+  <!--* 4、最后导自己的js -->
+  <script src="./js/index.js"></script>
 </body>
 </html>
